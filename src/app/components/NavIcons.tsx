@@ -54,7 +54,7 @@ function NavIcons() {
           onClick={() => setIsCartOpen((prev) => !prev)}
         />
         <div className=" absolute -top-4 -right-4 w-6 h-6 bg-primaryColor rounded-full text-sm text-white flex items-center justify-center">
-          1
+          2
         </div>
       </div>
       {isCartOpen && <CartModal />}
