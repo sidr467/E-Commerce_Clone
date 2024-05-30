@@ -37,10 +37,10 @@ function ProductImages() {
           className="object-cover rounded-md"
         />
       </div>
-      <div className="">
+      <div className=" flex gap-4 justify-between mt-8">
         {images.map((image, index) => (
           <div
-            className=" w-1/4 h-32 relative gap-4 mt-8"
+            className=" w-1/4 h-32 relative gap-4 mt-8 cursor-pointer"
             key={image.id}
             onClick={() => setIndex(index )}
           >
