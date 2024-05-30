@@ -4,15 +4,38 @@ import { useState } from "react"
 
 function Add() {
   const [quantity, setQuantity] = useState(1)
+
+  //   Temporary
+  const stock = 4
+
+  function handleQuantity(type: "i" | "d") {
+    if (type === "d" && quantity > 1) {
+      setQuantity((prev) => prev - 1)
+    }
+    if (type === "i" && quantity < stock) {
+      setQuantity((prev) => prev + 1)
+    }
+  }
+
   return (
     <div className="flex flex-col gap-4">
       <h4 className=" font-medium">Choose a Quantity</h4>
       <div className="flex justify-between">
         <div className=" flex items-center gap-4">
           <div className=" bg-gray-100 rounded-3xl py-2 px-4 flex items-center justify-between w-32">
-            <button className=" cursor-pointer text-xl">-</button>
+            <button
+              className=" cursor-pointer text-xl"
+              onClick={() => handleQuantity("d")}
+            >
+              -
+            </button>
             {quantity}
-            <button>+</button>
+            <button
+              className=" cursor-pointer text-xl"
+              onClick={() => handleQuantity("i")}
+            >
+              +
+            </button>
           </div>
           <div className="text-xs">
             Only <span className=" text-primaryColor">4 items</span> left!{" "}
