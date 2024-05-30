@@ -12,7 +12,17 @@ function CustomizeProducts() {
         </li>
       </ul>
       <h4 className="font-medium">Choose a size</h4>
-      <ul className="flex items-center gap-3"></ul>
+      <ul className="flex items-center gap-3">
+        <li className=" ring-1 ring-primaryColor text-primaryColor rounded-md text-sm cursor-pointer py-1 px-1">
+          Small
+        </li>
+        <li className=" ring-1 ring-primaryColor text-white bg-primaryColor rounded-md text-sm cursor-pointer py-1 px-1">
+          Medium
+        </li>
+        <li className=" ring-1 ring-primaryColor text-white bg-red-200 rounded-md text-sm cursor-not-allowed py-1 px-1">
+          Large
+        </li>
+      </ul>
     </div>
   )
 }
