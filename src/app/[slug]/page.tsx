@@ -11,7 +11,7 @@ const SinglePage = () => {
       </div>
       {/* Text */}
       <div className=" w-full lg:w-1/2 flex flex-col gap-6">
-        <h1 className=" text-4 xl font-medium">Product Name</h1>
+        <h1 className=" text-4xl font-medium">Product Name</h1>
         <p className="text-gray-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
           tempore hic saepe assumenda ad quasi a neque porro deleniti, illum
