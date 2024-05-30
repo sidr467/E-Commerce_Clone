@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className=" py-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 bg-gray-100 text-sm mt-24">
       {/* Top */}
-      <div className=" flex justify-between gap-24">
+      <div className=" flex flex-col md:flex-row justify-between gap-24">
         {/* Left */}
         <div className=" w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
           <Link href="/">
@@ -29,14 +29,23 @@ const Footer = () => {
         <div className="w-1/2 hidden lg:flex justify-between"></div>
         {/* Right */}
         <div className=" w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
-          <h1 className=" font-semibold text-lg">SUBSCRIBE</h1>
+          <h1 className=" font-light text-lg">SUBSCRIBE</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elite.</p>
-          <div className="flex">
+          <div className="flex ">
             <input
               type="text"
               placeholder="Email Address"
               className=" p-4 w-3/4"
             />
+            <button className=" w-1/2 bg-primaryColor text-white">JOIN</button>
+          </div>
+          <span className=" font-semibold">Secure Payments</span>
+          <div className="flex justify-between">
+            <Image src="/discover.png" alt="" width={40} height={20} />
+            <Image src="/skrill.png" alt="" width={40} height={20} />
+            <Image src="/mastercard.png" alt="" width={40} height={20} />
+            <Image src="/paypal.png" alt="" width={40} height={20} />
+            <Image src="/visa.png" alt="" width={40} height={20} />
           </div>
         </div>
       </div>
