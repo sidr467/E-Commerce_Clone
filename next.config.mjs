@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/E-Commerce_Clone",
+  output: "export", // <=== enables static exports
+  reactStrictMode: true,
   images: {
     remotePatterns: [
       {
