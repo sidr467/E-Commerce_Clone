@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === "production"
 
 const nextConfig = {
   basePath: isProd ? "/E-Commerce_Clone" : "",
-  output: "export", // <=== enables static exports
+  // output: "export", // <=== enables static exports
   reactStrictMode: true,
   images: {
     remotePatterns: [

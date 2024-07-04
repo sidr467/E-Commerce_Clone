@@ -80,7 +80,7 @@ function Slider() {
         ))}
       </div>
       <div>
-        <div className=" w-max px-3 py-5 opacity-70 rounded-2xl bg-black absolute m-auto left-1/2 bottom-2 flex gap-4">
+        <div className="absolute bg-black opacity-70 px-4 py-6 rounded-lg m-auto left-1/2 bottom-8 flex gap-4">
           {slides.map((slide, index) => (
             <div
               className={`w-3 h-3 rounded-full ring-1 ring-white cursor-pointer flex items-center justify-center ${

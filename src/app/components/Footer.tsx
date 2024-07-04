@@ -71,7 +71,7 @@ const Footer = () => {
             <button className=" w-1/2 bg-primaryColor text-white">JOIN</button>
           </div>
           <span className=" font-semibold">Secure Payments</span>
-          <div className="flex justify-between">
+          <div className="flex gap-2 justify-between">
             <Image src="/discover.png" alt="" width={40} height={20} />
             <Image src="/skrill.png" alt="" width={40} height={20} />
             <Image src="/mastercard.png" alt="" width={40} height={20} />
